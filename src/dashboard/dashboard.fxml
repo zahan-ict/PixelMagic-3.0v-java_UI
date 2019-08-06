@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="borderpane" fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.Controller">
+    <left>
+        <VBox prefHeight="800.0" prefWidth="155.0" style="-fx-background-color: #263544;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#imageList" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #263544;" styleClass="sidebar-buttons" text="Image list" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#cropList" prefHeight="45.0" prefWidth="155.0" style="-fx-border-left: #263544;" styleClass="sidebar-buttons" text="Crop list" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#setting" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #263544;" styleClass="sidebar-buttons" text="Setting" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#about" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #263544;" styleClass="sidebar-buttons" text="About" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+         </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox prefHeight="800.0" prefWidth="181.0" BorderPane.alignment="CENTER" />
+    </right>
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></Pane>
+    </center>
+   <top>
+      <HBox prefHeight="47.0" prefWidth="1000.0" style="-fx-background-color: #263544;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #263544;">
+               <children>
+                  <Text fill="#286cb8" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pixel Magic 3.0">
+                     <font>
+                        <Font name="Tahoma" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,42 @@
+
+.sidebar-buttons{
+-fx-background-color: #263544 !important;
+-fx-font-weight: 500;
+-fx-text-fill: #b7c0cd !important;
+-fx-alignment: center-left;
+-fx-font-size: 15px !important;
+-fx-pref-height: 20px;
+-fx-pref-width: 200px !important;
+-fx-border-insets: 20px 0px 10px 0px !important;
+ -fx-border-width: 0 0 0 4px !important;
+
+}
+
+.sidebar-buttons:focused
+{
+    -fx-border-color: #ffc107 !important;
+    -fx-border-width: 0 0 0 4px !important;
+   /* -fx-padding-left: 20px;*/
+    -fx-border-style: none !important;
+}
+
+
+.table-cell:filled:hover {
+    -fx-background-color: none;
+}
+
+
+/* Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: #f1f1f1;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+
+/* Selected row hovered when table not focused */
+.table-view:row-selection .table-row-cell:filled:focused:hover {
+    -fx-background-color: #f1f1f1;
+
+    -fx-text-fill: -fx-text-inner-color;
+}
